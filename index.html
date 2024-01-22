@@ -1,29 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea house with daisy UI</title>
-
+    <!-- tailwind and daisy UI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5daa8eb347.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- manrope font -->
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
     </style>
   </head>
-  <body>
-    <h1 class="font-medium">testing....</h1>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="hero my-16">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-3xl lg:text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-7 text-[#777] text-lg font-medium">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button
+              class="flex gap-3 rounded-md items-center text-white text-lg lg:text-xl font-bold px-2 lg:px-5 py-3 lg:py-5 bg-gradient-to-r from-[#FF8938] to-[#F00]"
+            >
+              Explore More
+              <img src="./images/arrow.png" alt="" />
+            </button>
+          </div>
+          <div>
+            <img src="/images/banner.png" class="" />
+            <div
+              class="-mt-24 ml-16 flex items-center gap-4 drop-shadow-lg bg-white lg:p-5 w-40 lg:w-60 rounded-md"
+            >
+              <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+              <div>
+                <h3 class="">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
